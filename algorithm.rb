@@ -4,6 +4,7 @@ require "readline"
 def test_exponentiality(n)
     for m in 2..sqrt(n) + 1 do
         k = log2(n) / log2(m)
+        
         return m, k.to_i if n == m ** k
     end
     
