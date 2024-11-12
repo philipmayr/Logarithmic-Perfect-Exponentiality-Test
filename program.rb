@@ -14,7 +14,7 @@ def test_exponentiality(n)
 end
 
 loop do
-    print("Enter a perfect power candidate to test perfect exponentiality: ")
+    print("Enter a candidate integer to test perfect exponentiality: ")
     n = Readline.readline().to_i
         
     if (m, k = test_exponentiality(n)) == false
