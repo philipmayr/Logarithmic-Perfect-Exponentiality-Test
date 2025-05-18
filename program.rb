@@ -16,12 +16,12 @@ end
 loop do
     print("Enter a candidate integer to test perfect exponentiality: ")
     n = Readline.readline().to_i
-        
+    
     if (m, k = test_exponentiality(n)) == false
         puts(n.to_s + " is not a perfect power.")
     else
-        puts(n.to_s + " is a perfect power whose base and index are " + m.to_s + " and " + k.to_s + ".")
+        puts(n.to_s + " is a perfect power whose base and exponent are " + m.to_s + " and " + k.to_s + ".")
     end
     
-    puts("\n")
+    puts()
 end
